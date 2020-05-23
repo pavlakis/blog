@@ -1,0 +1,4 @@
+baseURL = "https://pavlakis.dev"
+languageCode = "en-uk"
+title = "Antonios Pavlakis"
+theme = "mixedpaper"
