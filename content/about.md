@@ -9,7 +9,7 @@ Hello. My name is Antonis Pavlakis (pronounced Adoni), and I'm a software develo
 
 ## Community
 
-I've been involved with PHP User Groups since 2010. In 2015 I've co-founded [PHPMinds](https://phpminds.org) and I am still one of the organisers.
+I've been involved with PHP User Groups since 2010. I was an organiser for [PHP East Midlands](https://phpem.uk) for 5 years, and in 2015 I co-founded [PHPMinds](https://phpminds.org) and I am still one of the organisers.
 
 ## Projects
 

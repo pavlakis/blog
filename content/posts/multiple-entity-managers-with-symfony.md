@@ -1,7 +1,7 @@
 ---
 title: "Multiple Entity Managers With Symfony"
 date: 2020-05-23T08:08:56+01:00
-draft: true
+draft: false
 tags: ['php', 'symfony', 'doctrine']
 ---
 
