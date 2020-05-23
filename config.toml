@@ -2,3 +2,16 @@ baseURL = "https://pavlakis.dev"
 languageCode = "en-uk"
 title = "Antonios Pavlakis"
 theme = "mixedpaper"
+
+[params]
+copyright="pavlakis.dev"
+GitHubUser = "pavlakis"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/about/"
+    weight = -110
