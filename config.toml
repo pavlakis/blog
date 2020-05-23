@@ -4,6 +4,9 @@ title = "Antonios Pavlakis"
 theme = "mixedpaper"
 
 [params]
+
+fullWidthTheme = false
+centerTheme = false
 copyright="pavlakis.dev"
 GitHubUser = "pavlakis"
 
