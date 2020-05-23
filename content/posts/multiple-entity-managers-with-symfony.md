@@ -10,6 +10,8 @@ to have a read-only user (e.g. reading from a read-replica) and a user with writ
 
 This is something that both [Symfony](https://symfony.com/doc/4.4/doctrine/multiple_entity_managers.html) and Doctrine have supported for some time. 
 
+<!--more-->
+
 ## Doctrine config (doctrine.yaml)
 
 
