@@ -14,6 +14,7 @@ In particular, the [Behat/Symfony2Extension](https://github.com/Behat/Symfony2Ex
 
 The [FriendsOfBehat/SymfonyExtension](https://github.com/FriendsOfBehat/SymfonyExtension) now supports auto-wiring and auto-configuring your contexts.
 
+<!--more-->
 
 ## My Current Setup
 

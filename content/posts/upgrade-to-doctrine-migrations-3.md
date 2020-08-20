@@ -2,11 +2,14 @@
 title: "Upgrade to Doctrine Migrations 3"
 date: 2020-08-20T23:32:51+01:00
 draft: false
+tags: ['php', 'symfony', 'doctrine', 'doctrine-migrations']
 ---
 
 Upgrading `doctrine/migrations` to version 3 (`3.0.1`) on a Symfony 4.4 project.
 
 Even when following [semver](https://semver.org) a major version upgrade is expected to have backwards compatibility breaks.
+
+<!--more-->
 
 Fortunately in these cases, the migration steps have been relatively easy.
 
