@@ -29,7 +29,10 @@
           <!-- EcoOnline Global / StaySafe - Current -->
           <div class="experience-card current-role">
             <div class="card-header-custom">
-              <h3 class="position-title">Lead Developer</h3>
+              <div class="title-badges">
+                <h3 class="position-title">Lead Developer</h3>
+                <span class="remote-badge">🏠 Remote</span>
+              </div>
               <span class="date-badge current">Nov 2023 - Present</span>
             </div>
             <p class="company-location">
@@ -44,7 +47,10 @@
           <!-- StaySafe - Lead Developer -->
           <div class="experience-card">
             <div class="card-header-custom">
-              <h3 class="position-title">Lead Developer</h3>
+              <div class="title-badges">
+                <h3 class="position-title">Lead Developer</h3>
+                <span class="remote-badge">🏠 Remote</span>
+              </div>
               <span class="date-badge">Oct 2020 - Nov 2023</span>
             </div>
             <p class="company-location">
@@ -60,7 +66,10 @@
           <!-- StaySafe - Senior Developer -->
           <div class="experience-card">
             <div class="card-header-custom">
-              <h3 class="position-title">Senior Developer</h3>
+              <div class="title-badges">
+                <h3 class="position-title">Senior Developer</h3>
+                <span class="remote-badge">🏠 Remote</span>
+              </div>
               <span class="date-badge">Dec 2017 - Oct 2020</span>
             </div>
             <p class="company-location">
@@ -468,13 +477,33 @@ export default {
   flex-wrap: wrap;
 }
 
+.title-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 200px;
+}
+
 .position-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #212529;
   margin: 0;
-  flex: 1;
-  min-width: 200px;
+}
+
+.remote-badge {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+  letter-spacing: 0.025em;
 }
 
 .date-badge {
