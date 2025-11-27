@@ -39,9 +39,6 @@
               <span class="company-name">EcoOnline Global</span>
               <span class="location">London, United Kingdom</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- StaySafe - Lead Developer -->
@@ -58,9 +55,6 @@
               <span class="company-note">Acquired by EcoOnline Global in 2023</span>
               <span class="location">London, United Kingdom</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- StaySafe - Senior Developer -->
@@ -76,9 +70,6 @@
               <span class="company-name">StaySafe</span>
               <span class="location">London, United Kingdom</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Holmes Media (UK) Ltd -->
@@ -91,9 +82,6 @@
               <span class="company-name">Holmes Media (UK) Ltd</span>
               <span class="location">Market Harborough, United Kingdom</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- All Answers Ltd -->
@@ -106,9 +94,6 @@
               <span class="company-name">All Answers Ltd</span>
               <span class="location">Nottingham, United Kingdom</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- DVO Media Ltd -->
@@ -120,9 +105,6 @@
             <p class="company-location">
               <span class="company-name">DVO Media Ltd</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Twist Digital LLP -->
@@ -134,9 +116,6 @@
             <p class="company-location">
               <span class="company-name">Twist Digital LLP</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Jadu -->
@@ -148,9 +127,6 @@
             <p class="company-location">
               <span class="company-name">Jadu</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Go MAD Technology Ltd - Head of Development -->
@@ -162,9 +138,6 @@
             <p class="company-location">
               <span class="company-name">Go MAD Technology Ltd</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Go MAD Technology Ltd - Lead Developer -->
@@ -176,9 +149,6 @@
             <p class="company-location">
               <span class="company-name">Go MAD Technology Ltd</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- Go MAD Technology Ltd - Web Applications Developer -->
@@ -190,9 +160,6 @@
             <p class="company-location">
               <span class="company-name">Go MAD Technology Ltd</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- deSciner Business Network Ltd -->
@@ -204,9 +171,6 @@
             <p class="company-location">
               <span class="company-name">deSciner Business Network Ltd</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
           <!-- OBBeC Media Publications Ltd -->
@@ -233,12 +197,10 @@
               <span class="company-name">Novartis</span>
               <span class="location">Basel, Switzerland</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
         </div>
       </section>
+
 
       <!-- Community -->
       <section class="cv-section mb-5">
@@ -248,32 +210,32 @@
         </h2>
 
         <div class="experience-grid">
-          <!-- De Montfort University (DMU) - Lecturer -->
+          <!-- Leicester Greek School Parents and Carers Association -->
           <div class="experience-card community-card">
             <div class="card-header-custom">
-              <h3 class="position-title">Part-time Lecturer / Supervisor</h3>
-              <span class="date-badge">Oct 2014 - Aug 2016</span>
+              <h3 class="position-title">Chair</h3>
+              <span class="date-badge current">Sep 2024 - Present</span>
             </div>
             <p class="company-location">
-              <span class="company-name">De Montfort University (DMU)</span>
-              <span class="location">Leicester, United Kingdom</span>
+              <span class="company-name">Leicester Greek School Parents and Carers Association</span>
             </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
           </div>
 
-          <!-- De Montfort University - KTP Associate -->
+          <!-- Martial Arts Instructor -->
           <div class="experience-card community-card">
             <div class="card-header-custom">
-              <h3 class="position-title">KTP Associate</h3>
-              <span class="date-badge">Jun 2008 - Jul 2010</span>
+              <h3 class="position-title">Chief Instructor & Martial Arts Instructor</h3>
+              <span class="date-badge current">2009 - Present</span>
             </div>
             <p class="company-location">
-              <span class="company-name">De Montfort University</span>
+              <span class="company-name">
+                <a href="https://leicesteraikikai.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                  Leicester Aikikai
+                </a>
+              </span>
             </p>
             <div class="description">
-              <!-- Space for custom description -->
+              <p>Fourth degree black belt, fully qualified instructor teaching since 2009.</p>
             </div>
           </div>
         </div>
@@ -468,6 +430,10 @@ export default {
   border-color: #198754;
 }
 
+.community-card:hover::before {
+  opacity: 1;
+}
+
 .card-header-custom {
   display: flex;
   justify-content: space-between;
@@ -541,6 +507,17 @@ export default {
   font-size: 1rem;
   font-weight: 600;
   color: #495057;
+}
+
+.company-link {
+  color: #495057;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
 }
 
 .company-note {
