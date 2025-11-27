@@ -21,6 +21,11 @@
                 <i class="fa fa-heart"></i> about
               </RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/antonios-pavlakis-cv">
+                <i class="fa fa-file-text"></i> CV
+              </RouterLink>
+            </li>
           </ul>
         </div>
       </div>
