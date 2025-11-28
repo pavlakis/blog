@@ -184,14 +184,14 @@
         </h2>
 
         <div class="experience-grid">
-          <!-- Leicester Greek School Parents and Carers Association -->
+          <!-- Leicester Greek School Parents Association -->
           <div class="experience-card community-card">
             <div class="card-header-custom">
               <h3 class="position-title">Chair</h3>
               <span class="date-badge current">Sep 2024 - Present</span>
             </div>
             <p class="company-location">
-              <span class="company-name">Leicester Greek School Parents and Carers Association</span>
+              <span class="company-name">Leicester Greek School Parents Association</span>
             </p>
           </div>
 
