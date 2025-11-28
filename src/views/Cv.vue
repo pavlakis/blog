@@ -1,46 +1,50 @@
 <template>
-  <div class="cv">
-    <div class="cv-header text-center mb-5">
-      <h1 class="display-4 mb-3">Antonios Pavlakis MSc MBCS</h1>
-      <p class="lead text-muted">Lead Developer | Critical EHS & Lone Worker Systems | PHP Backend & Security | Scalable Architecture | Team Lead</p>
-    </div>
+  <article class="cv" itemscope itemtype="https://schema.org/Person">
+    <header class="cv-header text-center mb-5">
+      <h1 class="display-4 mb-3" itemprop="name">
+        <span itemprop="givenName">Antonios</span> <span itemprop="familyName">Pavlakis</span> <span itemprop="honorificSuffix">MSc MBCS</span>
+      </h1>
+      <p class="lead text-muted" itemprop="jobTitle">Lead Developer | Critical EHS & Lone Worker Systems | PHP Backend & Security | Scalable Architecture | Team Lead</p>
+    </header>
 
     <div class="cv-content">
       <!-- Contact -->
-      <section class="contact-section mb-5">
+      <section class="contact-section mb-5" aria-label="Contact Information">
         <div class="contact-info d-flex justify-content-center flex-wrap gap-4">
-          <a href="https://www.linkedin.com/in/pavlakis" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <i class="bi bi-linkedin"></i> linkedin.com/in/pavlakis
+          <a href="https://www.linkedin.com/in/pavlakis" target="_blank" rel="noopener noreferrer" class="contact-link" itemprop="sameAs" aria-label="LinkedIn Profile">
+            <i class="bi bi-linkedin" aria-hidden="true"></i> linkedin.com/in/pavlakis
           </a>
-          <a href="https://pavlakis.dev" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <i class="bi bi-globe"></i> pavlakis.dev
+          <a href="https://pavlakis.dev" target="_blank" rel="noopener noreferrer" class="contact-link" itemprop="url" aria-label="Personal Website">
+            <i class="bi bi-globe" aria-hidden="true"></i> pavlakis.dev
           </a>
         </div>
       </section>
 
       <!-- Professional Experience -->
-      <section class="cv-section mb-5">
-        <h2 class="section-title">
-          <i class="bi bi-briefcase-fill me-2"></i>
+      <section class="cv-section mb-5" aria-labelledby="experience-heading">
+        <h2 class="section-title" id="experience-heading">
+          <i class="bi bi-briefcase-fill me-2" aria-hidden="true"></i>
           Professional Experience
         </h2>
 
         <!-- Current Role Card -->
         <div class="experience-grid mb-4">
           <!-- EcoOnline Global / StaySafe - Current -->
-          <div class="experience-card current-role">
+          <article class="experience-card current-role" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
             <div class="card-header-custom">
               <div class="title-badges">
-                <h3 class="position-title">Lead Developer</h3>
-                <span class="remote-badge">🏠 Remote</span>
+                <h3 class="position-title" itemprop="jobTitle">Lead Developer</h3>
+                <span class="remote-badge" aria-label="Remote Position">🏠 Remote</span>
               </div>
-              <span class="date-badge current">Nov 2023 - Present</span>
+              <time class="date-badge current" datetime="2023-11">Nov 2023 - Present</time>
             </div>
             <p class="company-location">
-              <span class="company-name">EcoOnline Global</span>
-              <span class="location">London, United Kingdom</span>
+              <span class="company-name" itemprop="name">EcoOnline Global</span>
+              <span class="location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressLocality">London</span>, <span itemprop="addressCountry">United Kingdom</span>
+              </span>
             </p>
-          </div>
+          </article>
         </div>
 
         <!-- Past Positions Card with Toggle -->
@@ -49,22 +53,24 @@
             class="toggle-button"
             @click="showPastPositions = !showPastPositions"
             type="button"
+            :aria-expanded="showPastPositions"
+            aria-controls="past-positions-table"
           >
-            <i :class="showPastPositions ? 'bi bi-chevron-up' : 'bi bi-chevron-down'"></i>
+            <i :class="showPastPositions ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" aria-hidden="true"></i>
             Past Positions
             <span class="position-count">(14 positions)</span>
           </button>
 
           <transition name="slide-fade">
-            <div v-show="showPastPositions" class="table-card">
+            <div v-show="showPastPositions" class="table-card" id="past-positions-table">
               <div class="table-responsive">
-                <table class="table experience-table">
+                <table class="table experience-table" role="table" aria-label="Previous Employment History">
                   <thead>
                     <tr>
-                      <th>Position</th>
-                      <th>Company</th>
-                      <th>Location</th>
-                      <th>Period</th>
+                      <th scope="col">Position</th>
+                      <th scope="col">Company</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Period</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -177,29 +183,29 @@
 
 
       <!-- Community -->
-      <section class="cv-section mb-5">
-        <h2 class="section-title">
-          <i class="bi bi-people-fill me-2"></i>
+      <section class="cv-section mb-5" aria-labelledby="community-heading">
+        <h2 class="section-title" id="community-heading">
+          <i class="bi bi-people-fill me-2" aria-hidden="true"></i>
           Community
         </h2>
 
         <div class="experience-grid">
           <!-- Leicester Greek School Parents Association -->
-          <div class="experience-card community-card">
+          <article class="experience-card community-card">
             <div class="card-header-custom">
               <h3 class="position-title">Chair</h3>
-              <span class="date-badge current">Sep 2024 - Present</span>
+              <time class="date-badge current" datetime="2024-09">Sep 2024 - Present</time>
             </div>
             <p class="company-location">
               <span class="company-name">Leicester Greek School Parents Association</span>
             </p>
-          </div>
+          </article>
 
           <!-- Martial Arts Instructor -->
-          <div class="experience-card community-card">
+          <article class="experience-card community-card">
             <div class="card-header-custom">
               <h3 class="position-title">Chief Instructor & Martial Arts Instructor</h3>
-              <span class="date-badge current">2009 - Present</span>
+              <time class="date-badge current" datetime="2009">2009 - Present</time>
             </div>
             <p class="company-location">
               <span class="company-name">
@@ -211,33 +217,37 @@
             <div class="description">
               <p>Fourth degree black belt, fully qualified instructor teaching since 2009.</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!-- Education -->
-      <section class="cv-section mb-5">
-        <h2 class="section-title">
-          <i class="bi bi-mortarboard-fill me-2"></i>
+      <section class="cv-section mb-5" aria-labelledby="education-heading" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+        <h2 class="section-title" id="education-heading">
+          <i class="bi bi-mortarboard-fill me-2" aria-hidden="true"></i>
           Education
         </h2>
 
         <div class="education-grid">
-          <div class="education-card">
+          <article class="education-card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
             <div class="education-header">
-              <h3 class="degree-title">MSc, Computational Intelligence and Robotics</h3>
-              <span class="education-date">2004 - 2005</span>
+              <h3 class="degree-title" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                <span itemprop="name">MSc, Computational Intelligence and Robotics</span>
+              </h3>
+              <time class="education-date" datetime="2004/2005">2004 - 2005</time>
             </div>
-            <p class="institution">De Montfort University</p>
-          </div>
+            <p class="institution" itemprop="name">De Montfort University</p>
+          </article>
 
-          <div class="education-card">
+          <article class="education-card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
             <div class="education-header">
-              <h3 class="degree-title">BSc (Hons), Computer Science</h3>
-              <span class="education-date">1999 - 2004</span>
+              <h3 class="degree-title" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                <span itemprop="name">BSc (Hons), Computer Science</span>
+              </h3>
+              <time class="education-date" datetime="1999/2004">1999 - 2004</time>
             </div>
-            <p class="institution">De Montfort University</p>
-          </div>
+            <p class="institution" itemprop="name">De Montfort University</p>
+          </article>
         </div>
       </section>
     </div>
@@ -250,16 +260,95 @@
         <i class="bi bi-printer-fill"></i> Print CV
       </button>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
 import { RouterLink } from 'vue-router'
+import { useSEO } from '@/composables/useSEO'
+import { onMounted } from 'vue'
 
 export default {
   name: 'Cv',
   components: {
     RouterLink
+  },
+  setup() {
+    // SEO Meta Tags
+    useSEO({
+      title: 'Antonios Pavlakis MSc MBCS - Lead Developer CV | PHP Backend & Security Specialist',
+      description: 'Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years experience in software engineering, team leadership, and full-stack development.',
+      keywords: 'Antonios Pavlakis, Lead Developer, PHP Developer, Backend Developer, EcoOnline Global, StaySafe, Software Engineer, Web Development, Leicester, UK, Remote Developer, Security Specialist, Team Lead, Scalable Architecture, EHS Systems, Lone Worker Safety',
+      author: 'Antonios Pavlakis',
+      ogType: 'profile',
+      url: 'https://pavlakis.dev/antonios-pavlakis-cv',
+      canonical: 'https://pavlakis.dev/antonios-pavlakis-cv'
+    })
+
+    // Add JSON-LD Structured Data
+    onMounted(() => {
+      const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Antonios Pavlakis',
+        honorificSuffix: 'MSc MBCS',
+        jobTitle: 'Lead Developer',
+        description: 'Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture',
+        url: 'https://pavlakis.dev',
+        sameAs: [
+          'https://www.linkedin.com/in/pavlakis',
+          'https://pavlakis.dev',
+          'https://github.com/pavlakis'
+        ],
+        alumniOf: [
+          {
+            '@type': 'EducationalOrganization',
+            name: 'De Montfort University',
+            address: 'Leicester, United Kingdom'
+          }
+        ],
+        knowsAbout: [
+          'PHP Development',
+          'Backend Development',
+          'Software Architecture',
+          'Security',
+          'Team Leadership',
+          'Full Stack Development',
+          'Scalable Systems',
+          'EHS Software',
+          'Lone Worker Safety Systems'
+        ],
+        workLocation: {
+          '@type': 'Place',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'London',
+            addressCountry: 'United Kingdom'
+          }
+        },
+        worksFor: {
+          '@type': 'Organization',
+          name: 'EcoOnline Global',
+          sameAs: 'https://ecoonline.com'
+        }
+      }
+
+      // Remove existing structured data if present
+      const existingScript = document.querySelector('script[type="application/ld+json"]')
+      if (existingScript) {
+        existingScript.remove()
+      }
+
+      // Add new structured data
+      const script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.text = JSON.stringify(structuredData)
+      document.head.appendChild(script)
+    })
+
+    return {
+      showPastPositions: false
+    }
   },
   data() {
     return {
