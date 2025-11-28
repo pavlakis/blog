@@ -25,7 +25,8 @@
           Professional Experience
         </h2>
 
-        <div class="experience-grid">
+        <!-- Current Role Card -->
+        <div class="experience-grid mb-4">
           <!-- EcoOnline Global / StaySafe - Current -->
           <div class="experience-card current-role">
             <div class="card-header-custom">
@@ -40,164 +41,137 @@
               <span class="location">London, United Kingdom</span>
             </p>
           </div>
+        </div>
 
-          <!-- StaySafe - Lead Developer -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <div class="title-badges">
-                <h3 class="position-title">Lead Developer</h3>
-                <span class="remote-badge">🏠 Remote</span>
+        <!-- Past Positions Card with Toggle -->
+        <div class="past-positions-card">
+          <button
+            class="toggle-button"
+            @click="showPastPositions = !showPastPositions"
+            type="button"
+          >
+            <i :class="showPastPositions ? 'bi bi-chevron-up' : 'bi bi-chevron-down'"></i>
+            Past Positions
+            <span class="position-count">(14 positions)</span>
+          </button>
+
+          <transition name="slide-fade">
+            <div v-show="showPastPositions" class="table-card">
+              <div class="table-responsive">
+                <table class="table experience-table">
+                  <thead>
+                    <tr>
+                      <th>Position</th>
+                      <th>Company</th>
+                      <th>Location</th>
+                      <th>Period</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Lead Developer</strong>
+                        <span class="remote-badge-small">🏠 Remote</span>
+                      </td>
+                      <td>
+                        StaySafe
+                        <span class="table-note">Acquired by EcoOnline Global in 2023</span>
+                      </td>
+                      <td>London, UK</td>
+                      <td>Oct 2020 - Nov 2023</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Senior Developer</strong>
+                        <span class="remote-badge-small">🏠 Remote</span>
+                      </td>
+                      <td>StaySafe</td>
+                      <td>London, UK</td>
+                      <td>Dec 2017 - Oct 2020</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Senior Software Engineer</strong></td>
+                      <td>Holmes Media (UK) Ltd</td>
+                      <td>Market Harborough, UK</td>
+                      <td>Mar 2017 - Dec 2017</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Senior PHP Developer</strong></td>
+                      <td>All Answers Ltd</td>
+                      <td>Nottingham, UK</td>
+                      <td>Apr 2016 - Mar 2017</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Part-time Lecturer / Supervisor</strong></td>
+                      <td>De Montfort University (DMU)</td>
+                      <td>Leicester, UK</td>
+                      <td>Oct 2014 - Aug 2016</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Senior Developer</strong></td>
+                      <td>DVO Media Ltd</td>
+                      <td>Nottingham, UK</td>
+                      <td>Feb 2015 - Apr 2016</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Senior Developer</strong></td>
+                      <td>Twist Digital LLP</td>
+                      <td>Nottingham, UK</td>
+                      <td>Feb 2015 - May 2015</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Software Engineer</strong></td>
+                      <td>Jadu</td>
+                      <td>Leicester, UK</td>
+                      <td>Feb 2013 - Jan 2015</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Head of Development</strong></td>
+                      <td>Go MAD Technology Ltd</td>
+                      <td>Leicester, UK</td>
+                      <td>Nov 2011 - Feb 2013</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lead Developer</strong></td>
+                      <td>Go MAD Technology Ltd</td>
+                      <td>Leicester, UK</td>
+                      <td>Jul 2010 - Dec 2011</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Web Applications Developer</strong></td>
+                      <td>Go MAD Technology Ltd</td>
+                      <td>Leicester, UK</td>
+                      <td>Jun 2008 - Jul 2010</td>
+                    </tr>
+                    <tr>
+                      <td><strong>KTP Associate</strong></td>
+                      <td>De Montfort University</td>
+                      <td>Leicester, UK</td>
+                      <td>Jun 2008 - Jul 2010</td>
+                    </tr>
+                    <tr>
+                      <td><strong>IT & Development Manager</strong></td>
+                      <td>deSciner Business Network Ltd</td>
+                      <td>Leicester, UK</td>
+                      <td>2007 - 2008</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Web Developer</strong></td>
+                      <td>OBBeC Media Publications Ltd</td>
+                      <td>Leicester, UK</td>
+                      <td>2005 - 2007</td>
+                    </tr>
+                    <tr>
+                      <td><strong>IT Support</strong></td>
+                      <td>Novartis</td>
+                      <td>Basel, Switzerland</td>
+                      <td>2000 - 2001</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <span class="date-badge">Oct 2020 - Nov 2023</span>
             </div>
-            <p class="company-location">
-              <span class="company-name">StaySafe</span>
-              <span class="company-note">Acquired by EcoOnline Global in 2023</span>
-              <span class="location">London, United Kingdom</span>
-            </p>
-          </div>
-
-          <!-- StaySafe - Senior Developer -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <div class="title-badges">
-                <h3 class="position-title">Senior Developer</h3>
-                <span class="remote-badge">🏠 Remote</span>
-              </div>
-              <span class="date-badge">Dec 2017 - Oct 2020</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">StaySafe</span>
-              <span class="location">London, United Kingdom</span>
-            </p>
-          </div>
-
-          <!-- Holmes Media (UK) Ltd -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Senior Software Engineer</h3>
-              <span class="date-badge">Mar 2017 - Dec 2017</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Holmes Media (UK) Ltd</span>
-              <span class="location">Market Harborough, United Kingdom</span>
-            </p>
-          </div>
-
-          <!-- All Answers Ltd -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Senior PHP Developer</h3>
-              <span class="date-badge">Apr 2016 - Mar 2017</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">All Answers Ltd</span>
-              <span class="location">Nottingham, United Kingdom</span>
-            </p>
-          </div>
-
-          <!-- DVO Media Ltd -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Senior Developer</h3>
-              <span class="date-badge">Feb 2015 - Apr 2016</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">DVO Media Ltd</span>
-            </p>
-          </div>
-
-          <!-- Twist Digital LLP -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Senior Developer</h3>
-              <span class="date-badge">Feb 2015 - May 2015</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Twist Digital LLP</span>
-            </p>
-          </div>
-
-          <!-- Jadu -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Software Engineer</h3>
-              <span class="date-badge">Feb 2013 - Jan 2015</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Jadu</span>
-            </p>
-          </div>
-
-          <!-- Go MAD Technology Ltd - Head of Development -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Head of Development</h3>
-              <span class="date-badge">Nov 2011 - Feb 2013</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Go MAD Technology Ltd</span>
-            </p>
-          </div>
-
-          <!-- Go MAD Technology Ltd - Lead Developer -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Lead Developer</h3>
-              <span class="date-badge">Jul 2010 - Dec 2011</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Go MAD Technology Ltd</span>
-            </p>
-          </div>
-
-          <!-- Go MAD Technology Ltd - Web Applications Developer -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Web Applications Developer</h3>
-              <span class="date-badge">Jun 2008 - Jul 2010</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Go MAD Technology Ltd</span>
-            </p>
-          </div>
-
-          <!-- deSciner Business Network Ltd -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">IT & Development Manager</h3>
-              <span class="date-badge">2007 - 2008</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">deSciner Business Network Ltd</span>
-            </p>
-          </div>
-
-          <!-- OBBeC Media Publications Ltd -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Web Developer</h3>
-              <span class="date-badge">2005 - 2007</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">OBBeC Media Publications Ltd</span>
-            </p>
-            <div class="description">
-              <!-- Space for custom description -->
-            </div>
-          </div>
-
-          <!-- Novartis -->
-          <div class="experience-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">IT Support</h3>
-              <span class="date-badge">2000 - 2001</span>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Novartis</span>
-              <span class="location">Basel, Switzerland</span>
-            </p>
-          </div>
+          </transition>
         </div>
       </section>
 
@@ -286,6 +260,11 @@ export default {
   name: 'Cv',
   components: {
     RouterLink
+  },
+  data() {
+    return {
+      showPastPositions: false
+    }
   },
   methods: {
     printCV() {
@@ -377,6 +356,155 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 1.5rem;
+}
+
+/* Past Positions Card & Toggle */
+.past-positions-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 1.5rem;
+}
+
+.toggle-button {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.toggle-button:hover {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.toggle-button i {
+  font-size: 1.25rem;
+  color: #0d6efd;
+  transition: transform 0.3s ease;
+}
+
+.position-count {
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.table-card {
+  padding: 0;
+}
+
+/* Slide Fade Transition */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+/* Experience Table */
+.experience-table {
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.experience-table thead {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: white;
+}
+
+.experience-table thead th {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.025em;
+}
+
+.experience-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+.experience-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.experience-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.experience-table tbody td {
+  padding: 1rem;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+
+.experience-table tbody td:first-child {
+  min-width: 220px;
+}
+
+.experience-table tbody td:nth-child(2) {
+  min-width: 200px;
+}
+
+.experience-table tbody td:nth-child(3) {
+  min-width: 140px;
+}
+
+.experience-table tbody td:nth-child(4) {
+  min-width: 160px;
+  white-space: nowrap;
+}
+
+.remote-badge-small {
+  display: inline-block;
+  padding: 0.125rem 0.375rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.table-note {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .experience-card {
@@ -627,6 +755,19 @@ export default {
     display: none !important;
   }
 
+  .toggle-button {
+    display: none !important;
+  }
+
+  .table-card {
+    display: block !important;
+  }
+
+  .past-positions-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+
   .section-title {
     color: #000;
     border-bottom-color: #000;
@@ -637,6 +778,20 @@ export default {
     break-inside: avoid;
     box-shadow: none;
     border: 1px solid #000;
+    page-break-inside: avoid;
+  }
+
+  .experience-table {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+
+  .experience-table thead {
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  .experience-table tbody tr {
     page-break-inside: avoid;
   }
 
@@ -700,6 +855,15 @@ export default {
   .position-title,
   .degree-title {
     font-size: 1.1rem;
+  }
+
+  .experience-table {
+    font-size: 0.85rem;
+  }
+
+  .experience-table thead th,
+  .experience-table tbody td {
+    padding: 0.75rem 0.5rem;
   }
 }
 
