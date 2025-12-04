@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pavlakis.dev/sitemap.xml
+
+# LLM-specific file for AI agents and language models
+# See: /llms.txt
+
