@@ -1,0 +1,140 @@
+# Antonios Pavlakis - Professional Developer Blog
+
+> Lead Developer | PHP Backend Specialist | Software Architect | Team Lead
+
+## About
+
+This is the personal blog and professional portfolio of Antonios Pavlakis (MSc MBCS), a Lead Developer with 17+ years of experience in software development, specialising in PHP backend development, critical safety systems, and scalable architecture.
+
+## Site Structure
+
+- **Home**: Blog posts about PHP, Symfony, software development, and technical topics
+- **About**: Personal introduction and community involvement
+- **CV**: Comprehensive professional curriculum vitae
+- **Blog Posts**: Technical articles on PHP, Symfony, Doctrine, and web development
+
+## Professional Profile
+
+**Name**: Antonios Pavlakis (pronounced Adoni)
+**Credentials**: MSc, MBCS (Member of British Computer Society)
+**Current Role**: Lead Developer at EcoOnline Global (November 2023 - Present)
+**Location**: London, United Kingdom (Remote)
+**Years of Experience**: 17+ years (2000-2025)
+
+## Technical Expertise
+
+**Core Technologies**: PHP 8+, Symfony 5/6, MySQL, Redis, Docker, AWS
+
+**Specializations**:
+- Backend Development (PHP)
+- Microservices Architecture
+- RESTful APIs
+- Software Security & OWASP
+- Performance Optimization
+- CI/CD & DevOps
+- Team Leadership
+
+**Industry Focus**: SaaS Platforms, EHS (Environment, Health, Safety) Software, Lone Worker Safety Systems, Critical Safety-Critical Systems
+
+## Professional Experience Highlights
+
+**EcoOnline Global** (Nov 2023 - Present) - Lead Developer - Remote
+- Helping to keep people safe with StaySafe Lone Worker since December 2017
+
+**StaySafe** (Dec 2017 - Nov 2023) - Lead Developer / Senior Developer - Remote
+- Note: StaySafe was acquired by EcoOnline Global in November 2023
+- Led development of critical lone worker monitoring systems
+- Architected scalable microservices platforms
+- Managed remote development teams
+
+**Previous Experience**:
+- Senior Software Engineer at Holmes Media (UK) Ltd
+- Senior PHP Developer at All Answers Ltd
+- Head of Development at Go MAD Technology Ltd
+- Technical positions spanning 20+ years
+
+## Education
+
+**MSc in Computational Intelligence and Robotics** - De Montfort University (2004-2005)
+**BSc (Hons) in Computer Science** - De Montfort University (1999-2004)
+
+## Community Involvement
+
+- **Chair** - Leicester Greek School Parents and Carers Association (Sept 2024 - Present)
+- **Chief Instructor** - Leicester Aikikai aikido martial arts school (2009 - Present, Fourth degree black belt)
+- **Co-founder & Organiser** - PHPMinds (2015 - Present)
+- **Former Organiser** - PHP East Midlands (5 years)
+- **Part-time Lecturer** - De Montfort University (2014-2016)
+
+## Blog Topics
+
+The blog features technical articles on:
+- PHP 8+ development and best practices
+- Symfony framework implementation
+- Doctrine ORM and database patterns
+- Multiple entity managers with Symfony
+- Doctrine Migrations upgrades
+- Behat and BDD testing
+- Software architecture
+- Backend development patterns
+
+## Sample Blog Posts
+
+- Multiple Entity Managers With Symfony
+- Upgrade to Doctrine Migrations 3
+- Upgrade to Friends of Behat Symfony Extension
+
+## Contact & Social
+
+- **Website**: https://pavlakis.dev
+- **LinkedIn**: https://linkedin.com/in/pavlakis
+- **GitHub**: https://github.com/pavlakis
+- **Twitter**: https://twitter.com/pavlakis
+- **Handle**: @pavlakis
+
+## Technical Stack (This Website)
+
+- **Framework**: Vue.js 3
+- **Build Tool**: Vite
+- **Styling**: Bootstrap 5
+- **Routing**: Vue Router 4
+- **Hosting**: Netlify
+- **Language**: JavaScript ES6+
+
+## Professional Attributes
+
+- Experienced in distributed teams
+- Agile methodologies expert
+- Strong focus on software security (OWASP)
+- Test-driven development advocate
+- Technical leadership and mentoring
+- Bilingual: English and Greek (Native/Fluent)
+
+## Open To
+
+- Lead Developer positions
+- Engineering Manager roles
+- Principal Engineer roles
+- Software Architect opportunities
+- Technical Leadership positions
+- Backend Engineering roles
+- Contract/Consulting engagements
+- Technical Advisory positions
+- Remote-first companies
+
+## Notable Projects
+
+- StaySafe Lone Worker safety-critical monitoring system
+
+## Keywords
+
+PHP, Symfony, Laravel, Backend Development, Software Architecture, Microservices, REST API, Docker, AWS, MySQL, Redis, CI/CD, DevOps, Security, OWASP, Team Leadership, Remote Work, Agile, Scrum, TDD, Software Engineer, Lead Developer, Technical Leadership, EHS Software, Safety Systems
+
+## Last Updated
+
+December 2025
+
+---
+
+For the most up-to-date information, visit the CV page at /antonios-pavlakis-cv or connect via LinkedIn.
+
