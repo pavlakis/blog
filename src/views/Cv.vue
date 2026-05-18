@@ -8,19 +8,19 @@
         <dd>Antonios Pavlakis MSc MBCS</dd>
 
         <dt>Professional Title:</dt>
-        <dd>Lead Developer, Senior PHP Backend Developer, Software Architect, Team Lead</dd>
+        <dd>Development Manager, Lead Developer, Senior PHP Backend Developer, Software Architect, Team Lead</dd>
 
         <dt>Core Technical Expertise:</dt>
         <dd>PHP 8+, Symfony 5/6, Laravel, MySQL, PostgreSQL, Redis, Elasticsearch, Docker, Kubernetes, AWS, Microservices Architecture, RESTful APIs, GraphQL, Software Security, Performance Optimization, CI/CD, DevOps</dd>
 
         <dt>Years of Professional Experience:</dt>
-        <dd>20+ years in professional software development (2000-2025)</dd>
+        <dd>20+ years in professional software development (2000-2026)</dd>
 
         <dt>Current Employment:</dt>
-        <dd>Lead Developer at EcoOnline Global (November 2023 - Present). Remote position based in London, United Kingdom. Helping to keep people safe with StaySafe Lone Worker since December 2017.</dd>
+        <dd>Development Manager at EcoOnline Global (April 2026 - Present). Remote position based in London, United Kingdom. Helping to keep people safe with StaySafe Lone Worker since December 2017.</dd>
 
         <dt>Previous Key Roles:</dt>
-        <dd>Lead Developer at StaySafe (Oct 2020 - Nov 2023, acquired by EcoOnline Global), Senior Developer at StaySafe (Dec 2017 - Oct 2020), Senior Software Engineer at Holmes Media (UK) Ltd, Senior PHP Developer at All Answers Ltd, Head of Development at Go MAD Technology Ltd</dd>
+        <dd>Lead Developer at EcoOnline Global (Nov 2023 - Apr 2026), Lead Developer at StaySafe (Oct 2020 - Nov 2023, acquired by EcoOnline Global), Senior Developer at StaySafe (Dec 2017 - Oct 2020), Senior Software Engineer at Holmes Media (UK) Ltd, Senior PHP Developer at All Answers Ltd, Head of Development at Go MAD Technology Ltd</dd>
 
         <dt>Industry Specialization:</dt>
         <dd>SaaS Platforms, EHS (Environment, Health, Safety) Software, Lone Worker Safety Systems, Critical Safety-Critical Systems, High Availability Platforms, Security-Focused Applications</dd>
@@ -83,7 +83,7 @@
       <h1 class="display-4 mb-3" itemprop="name">
         <span itemprop="givenName">Antonios</span> <span itemprop="familyName">Pavlakis</span> <span itemprop="honorificSuffix">MSc MBCS</span>
       </h1>
-      <p class="lead text-muted" itemprop="jobTitle">Lead Developer | Critical EHS & Lone Worker Systems | PHP Backend & Security | Scalable Architecture | Team Lead</p>
+      <p class="lead text-muted" itemprop="jobTitle">Development Manager | Critical EHS & Lone Worker Systems | PHP Backend & Security | Scalable Architecture | Team Lead</p>
     </header>
 
     <div class="cv-content">
@@ -108,14 +108,14 @@
 
         <!-- Current Role Card -->
         <div class="experience-grid mb-4">
-          <!-- EcoOnline Global / StaySafe - Current -->
+          <!-- EcoOnline Global - Current Development Manager -->
           <article class="experience-card current-role" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
             <div class="card-header-custom">
               <div class="title-badges">
-                <h3 class="position-title" itemprop="jobTitle">Lead Developer</h3>
+                <h3 class="position-title" itemprop="jobTitle">Development Manager</h3>
                 <span class="remote-badge" aria-label="Remote Position">🏠 Remote</span>
               </div>
-              <time class="date-badge current" datetime="2023-11">Nov 2023 - Present</time>
+              <time class="date-badge current" datetime="2026-04">Apr 2026 - Present</time>
             </div>
             <p class="company-location">
               <span class="company-name" itemprop="name">EcoOnline Global</span>
@@ -125,6 +125,45 @@
             </p>
             <div class="description">
               <p>Helping to keep people safe with StaySafe Lone Worker, since December 2017</p>
+            </div>
+          </article>
+
+          <!-- EcoOnline Global / StaySafe - Career Progression -->
+          <article class="experience-card progression-card">
+            <div class="card-header-custom">
+              <div class="title-badges">
+                <h3 class="position-title">Career Progression</h3>
+              </div>
+            </div>
+            <p class="company-location">
+              <span class="company-name">EcoOnline Global</span>
+              <span class="location">London, United Kingdom</span>
+            </p>
+            <div class="progression-timeline">
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-title">Lead Developer</span>
+                  <span class="timeline-company">EcoOnline Global</span>
+                  <time class="timeline-date" datetime="2023-11/2026-04">Nov 2023 – Apr 2026</time>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-title">Lead Developer</span>
+                  <span class="timeline-company">StaySafe <span class="timeline-note">(acquired by EcoOnline Global)</span></span>
+                  <time class="timeline-date" datetime="2020-10/2023-11">Oct 2020 – Nov 2023</time>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-title">Senior Developer</span>
+                  <span class="timeline-company">StaySafe</span>
+                  <time class="timeline-date" datetime="2017-12/2020-10">Dec 2017 – Oct 2020</time>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -140,7 +179,7 @@
           >
             <i :class="showPastPositions ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" aria-hidden="true"></i>
             Past Positions
-            <span class="position-count">(14 positions)</span>
+            <span class="position-count">(13 positions)</span>
           </button>
 
           <transition name="slide-fade">
@@ -156,27 +195,6 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <strong>Lead Developer</strong>
-                        <span class="remote-badge-small">🏠 Remote</span>
-                      </td>
-                      <td>
-                        StaySafe
-                        <span class="table-note">Acquired by EcoOnline Global in 2023</span>
-                      </td>
-                      <td>London, UK</td>
-                      <td>Oct 2020 - Nov 2023</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>Senior Developer</strong>
-                        <span class="remote-badge-small">🏠 Remote</span>
-                      </td>
-                      <td>StaySafe</td>
-                      <td>London, UK</td>
-                      <td>Dec 2017 - Oct 2020</td>
-                    </tr>
                     <tr>
                       <td><strong>Senior Software Engineer</strong></td>
                       <td>Holmes Media (UK) Ltd</td>
@@ -358,9 +376,9 @@ export default {
   setup() {
     // SEO Meta Tags with AI/LLM Optimization
     useSEO({
-      title: 'Antonios Pavlakis MSc MBCS - Lead Developer CV | PHP Backend & Security Specialist',
-      description: 'Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years experience in software engineering, team leadership, and full-stack development. Expert in PHP, Symfony, Laravel, MySQL, Redis, Docker, AWS. Remote work specialist with proven track record in SaaS platforms and safety-critical systems.',
-      keywords: 'Antonios Pavlakis, Lead Developer, Senior PHP Developer, Backend Developer, Software Engineer, EcoOnline Global, StaySafe, PHP Expert, Symfony, Laravel, MySQL, PostgreSQL, Redis, Docker, Kubernetes, AWS, Microservices, API Development, REST, GraphQL, Security Specialist, Team Lead, Scalable Architecture, EHS Systems, Lone Worker Safety, SaaS, Remote Developer, Agile, Scrum, TDD, CI/CD, Git, DevOps, Software Architecture, Database Design, Performance Optimization, Code Review, Mentoring, Leicester UK, London UK, Available for Hire, Contract Developer, Permanent Roles, TypeScript, JavaScript, Vue.js, React, Event-Driven Architecture, Domain-Driven Design, CQRS, PHPUnit, Behat, Jenkins, GitHub Actions, OWASP, OAuth, JWT, Authentication, Authorization, New Relic, Sentry, ELK Stack, RabbitMQ, Nginx, Apache, Linux, High Availability, Load Balancing, Message Queues, API Design, OpenAPI, Swagger, GDPR, Security Audits, Technical Leadership, Engineering Management',
+      title: 'Antonios Pavlakis MSc MBCS - Development Manager CV | PHP Backend & Security Specialist',
+      description: 'Development Manager & Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years experience in software engineering, team leadership, and full-stack development. Expert in PHP, Symfony, Laravel, MySQL, Redis, Docker, AWS. Remote work specialist with proven track record in SaaS platforms and safety-critical systems.',
+      keywords: 'Antonios Pavlakis, Development Manager, Lead Developer, Senior PHP Developer, Backend Developer, Software Engineer, EcoOnline Global, StaySafe, PHP Expert, Symfony, Laravel, MySQL, PostgreSQL, Redis, Docker, Kubernetes, AWS, Microservices, API Development, REST, GraphQL, Security Specialist, Team Lead, Engineering Manager, Scalable Architecture, EHS Systems, Lone Worker Safety, SaaS, Remote Developer, Agile, Scrum, TDD, CI/CD, Git, DevOps, Software Architecture, Database Design, Performance Optimization, Code Review, Mentoring, Leicester UK, London UK, Available for Hire, Contract Developer, Permanent Roles, TypeScript, JavaScript, Vue.js, React, Event-Driven Architecture, Domain-Driven Design, CQRS, PHPUnit, Behat, Jenkins, GitHub Actions, OWASP, OAuth, JWT, Authentication, Authorization, New Relic, Sentry, ELK Stack, RabbitMQ, Nginx, Apache, Linux, High Availability, Load Balancing, Message Queues, API Design, OpenAPI, Swagger, GDPR, Security Audits, Technical Leadership, Engineering Management',
       author: 'Antonios Pavlakis',
       ogType: 'profile',
       url: 'https://pavlakis.dev/antonios-pavlakis-cv',
@@ -376,8 +394,8 @@ export default {
         givenName: 'Antonios',
         familyName: 'Pavlakis',
         honorificSuffix: 'MSc MBCS',
-        jobTitle: 'Lead Developer',
-        description: 'Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years professional software engineering experience with expertise in building high-availability SaaS platforms, team leadership, and safety-critical systems.',
+        jobTitle: 'Development Manager',
+        description: 'Development Manager specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years professional software engineering experience with expertise in building high-availability SaaS platforms, team leadership, and safety-critical systems.',
         url: 'https://pavlakis.dev',
         email: 'mailto:contact@pavlakis.dev',
         sameAs: [
@@ -549,8 +567,18 @@ export default {
         workHistory: [
           {
             '@type': 'OrganizationRole',
+            roleName: 'Development Manager',
+            startDate: '2026-04',
+            worksFor: {
+              '@type': 'Organization',
+              name: 'EcoOnline Global'
+            }
+          },
+          {
+            '@type': 'OrganizationRole',
             roleName: 'Lead Developer',
             startDate: '2023-11',
+            endDate: '2026-04',
             worksFor: {
               '@type': 'Organization',
               name: 'EcoOnline Global'
@@ -712,6 +740,100 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 1.5rem;
+}
+
+.company-note-inline {
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Progression Card */
+.progression-card {
+  border: 1px solid #dee2e6;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+.progression-card::before {
+  background: linear-gradient(to bottom, #0d6efd, #6610f2);
+  opacity: 1;
+  width: 4px;
+}
+
+/* Progression Timeline */
+.progression-timeline {
+  margin-top: 0.75rem;
+  padding-left: 0.25rem;
+  position: relative;
+}
+
+.progression-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(to bottom, #0d6efd, #6610f2);
+  opacity: 0.3;
+}
+
+.timeline-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0d6efd;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #0d6efd;
+  flex-shrink: 0;
+  margin-top: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-entry:first-child .timeline-dot {
+  background: #6610f2;
+  box-shadow: 0 0 0 2px #6610f2;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+}
+
+.timeline-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.3;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.timeline-note {
+  font-size: 0.78rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-weight: 500;
 }
 
 /* Past Positions Card & Toggle */
