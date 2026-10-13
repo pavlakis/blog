@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Blog from '../views/Blog.vue'
 import About from '../views/About.vue'
 import Post from '../views/Post.vue'
 import Cv from '../views/Cv.vue'
@@ -8,7 +8,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Cv
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog
   },
   {
     path: '/about',
@@ -17,8 +22,7 @@ const routes = [
   },
   {
     path: '/antonios-pavlakis-cv',
-    name: 'CV',
-    component: Cv
+    redirect: to => ({ path: '/', query: to.query, hash: to.hash })
   },
   {
     path: '/posts/:slug',

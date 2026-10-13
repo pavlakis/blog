@@ -9,8 +9,15 @@ a {
   transition: color 0.3s ease;
 }
 
-.router-link-active {
+.router-link-exact-active {
   font-weight: 600;
+}
+
+@media print {
+  #app > header,
+  #app > footer {
+    display: none !important;
+  }
 }
 
 /* Code highlighting */

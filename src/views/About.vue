@@ -13,7 +13,7 @@
 
       <p>
         For more information about my professional experience, education, and community involvement,
-        please check out my <router-link to="/antonios-pavlakis-cv">CV</router-link>.
+        please check out my <router-link to="/">CV</router-link>.
       </p>
 
       <h2 class="mt-4 mb-3">Community</h2>
@@ -48,10 +48,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'About'
-}
+<script setup>
+import { useSEO } from '../composables/useSEO'
+
+useSEO({
+  title: 'About | Antonios Pavlakis',
+  description: 'About Antonios Pavlakis, software developer, community organiser, and open source contributor.',
+  url: 'https://pavlakis.dev/about'
+})
 </script>
 
 <style scoped>

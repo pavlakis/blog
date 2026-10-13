@@ -18,6 +18,17 @@
   status = 200
   force = true
 
+# Keep existing CV links pointing to the front page.
+[[redirects]]
+  from = "/antonios-pavlakis-cv"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/antonios-pavlakis-cv/"
+  to = "/"
+  status = 301
+
 # SPA redirect rules - crucial for Vue Router
 [[redirects]]
   from = "/*"

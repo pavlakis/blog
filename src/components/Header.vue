@@ -17,14 +17,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/about">
-                <i class="fa fa-heart"></i> about
-              </RouterLink>
+              <RouterLink class="nav-link" to="/" exact-active-class="active">CV</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/antonios-pavlakis-cv">
-                <i class="fa fa-file-text"></i> CV
-              </RouterLink>
+              <RouterLink class="nav-link" to="/blog" exact-active-class="active">Blog</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/about" exact-active-class="active">About</RouterLink>
             </li>
           </ul>
         </div>

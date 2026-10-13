@@ -16,48 +16,35 @@
       Post not found
     </div>
     <div class="mt-4">
-      <RouterLink to="/" class="btn btn-outline-primary">
-        ← Back to Home
+      <RouterLink to="/blog" class="btn btn-outline-primary">
+        ← Back to Blog
       </RouterLink>
     </div>
   </div>
 </template>
 
-<script>
-import { ref, onMounted } from 'vue'
+<script setup>
+import { computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import { posts } from '../data/posts'
+import { useSEO } from '../composables/useSEO'
 
-export default {
-  name: 'Post',
-  components: {
-    RouterLink
-  },
-  setup() {
-    const route = useRoute()
-    const post = ref(null)
+const route = useRoute()
+const post = computed(() => posts.find(entry => entry.slug === route.params.slug))
 
-    onMounted(() => {
-      const slug = route.params.slug
-      post.value = posts.find(p => p.slug === slug)
-    })
+useSEO(() => ({
+  title: post.value ? `${post.value.title} | Antonios Pavlakis` : 'Post not found | Antonios Pavlakis',
+  description: post.value?.summary || 'This blog post could not be found.',
+  ogType: 'article',
+  url: `https://pavlakis.dev${route.path}`
+}))
 
-    const formatDate = (dateString) => {
-      const date = new Date(dateString)
-      return date.toLocaleDateString('en-US', {
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      })
-    }
-
-    return {
-      post,
-      formatDate
-    }
-  }
-}
+const formatDate = (dateString) => new Date(dateString).toLocaleDateString('en-US', {
+  weekday: 'short',
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric'
+})
 </script>
 
 <style scoped>

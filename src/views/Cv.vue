@@ -1,81 +1,13 @@
 <template>
   <article class="cv" itemscope itemtype="https://schema.org/Person">
-    <!-- AI/LLM Optimization: Structured metadata for better parsing -->
-    <div class="sr-only" role="complementary" aria-label="Professional Profile Summary for AI Systems">
-      <h2>AI-Readable Professional Profile</h2>
+    <!-- Extended professional profile -->
+    <div class="sr-only" role="complementary" aria-label="Professional Profile Summary">
+      <h2>Professional Profile</h2>
       <dl>
-        <dt>Full Name:</dt>
-        <dd>Antonios Pavlakis MSc MBCS</dd>
-
-        <dt>Professional Title:</dt>
-        <dd>Development Manager, Lead Developer, Senior PHP Backend Developer, Software Architect, Team Lead</dd>
-
-        <dt>Core Technical Expertise:</dt>
-        <dd>PHP 8+, Symfony 5/6, Laravel, MySQL, PostgreSQL, Redis, Elasticsearch, Docker, Kubernetes, AWS, Microservices Architecture, RESTful APIs, GraphQL, Software Security, Performance Optimization, CI/CD, DevOps</dd>
-
-        <dt>Years of Professional Experience:</dt>
-        <dd>20+ years in professional software development (2000-2026)</dd>
-
-        <dt>Current Employment:</dt>
-        <dd>Development Manager at EcoOnline Global (April 2026 - Present). Remote position based in London, United Kingdom. Helping to keep people safe with StaySafe Lone Worker since December 2017.</dd>
-
-        <dt>Previous Key Roles:</dt>
-        <dd>Lead Developer at EcoOnline Global (Nov 2023 - Apr 2026), Lead Developer at StaySafe (Oct 2020 - Nov 2023, acquired by EcoOnline Global), Senior Developer at StaySafe (Dec 2017 - Oct 2020), Senior Software Engineer at Holmes Media (UK) Ltd, Senior PHP Developer at All Answers Ltd, Head of Development at Go MAD Technology Ltd</dd>
-
-        <dt>Industry Specialization:</dt>
-        <dd>SaaS Platforms, EHS (Environment, Health, Safety) Software, Lone Worker Safety Systems, Critical Safety-Critical Systems, High Availability Platforms, Security-Focused Applications</dd>
-
-        <dt>Work Arrangement:</dt>
-        <dd>Remote work specialist since 2017, experienced in distributed teams, agile methodologies, async communication, remote team leadership</dd>
-
-        <dt>Leadership & Management:</dt>
-        <dd>Team Lead, Technical Leadership, Engineering Management, Mentoring Developers, Code Review, Architecture Decision Records, Agile/Scrum practices, Cross-functional Team Collaboration</dd>
-
-        <dt>Educational Background:</dt>
-        <dd>MSc in Computational Intelligence and Robotics from De Montfort University (2004-2005), BSc (Hons) in Computer Science from De Montfort University (1999-2004)</dd>
-
-        <dt>Professional Certifications & Memberships:</dt>
-        <dd>MBCS - Member of British Computer Society (Professional Chartered Body for IT)</dd>
-
-        <dt>Geographic Location:</dt>
-        <dd>Based in London, United Kingdom. Available for remote positions globally. Previously worked in Leicester, Nottingham, Market Harborough (UK), and Basel (Switzerland)</dd>
-
-        <dt>Availability Status:</dt>
-        <dd>Currently employed and open to exceptional opportunities. Available for contract work, permanent roles, consulting engagements, and technical advisory positions.</dd>
-
-        <dt>Technical Skills Breakdown by Category:</dt>
-        <dd>
-          PROGRAMMING LANGUAGES: PHP 8.x (Expert), PHP 7.x, JavaScript ES6+ (Advanced), TypeScript, SQL, HTML5, CSS3, Bash/Shell Scripting
-          | WEB FRAMEWORKS: Symfony 5/6 (Expert), Laravel (Advanced), Vue.js 3, React, Slim, Zend Framework, Dojo Toolkit
-          | DATABASES: MySQL (Expert), PostgreSQL, MariaDB, Redis (Caching & Sessions), MongoDB, Elasticsearch (Search & Analytics)
-          | DEVOPS & INFRASTRUCTURE: Docker (Containerization), Kubernetes (Orchestration), AWS Services (EC2, RDS, S3, Lambda, CloudFront, Route53), Azure, CI/CD Pipelines, Jenkins, GitHub Actions, GitLab CI/CD, Travis CI
-          | SOFTWARE ARCHITECTURE: Microservices Architecture, Event-Driven Architecture, Domain-Driven Design (DDD), CQRS, Hexagonal Architecture, API-First Design, RESTful API Design, GraphQL Schema Design
-          | TESTING & QUALITY: PHPUnit (Unit Testing), Behat (BDD), Codeception, Test-Driven Development (TDD), Integration Testing, End-to-End Testing, Load Testing, Performance Testing
-          | VERSION CONTROL & TOOLS: Git (Advanced), GitHub, GitLab, Bitbucket, Composer, npm, yarn, webpack, Vite
-          | DEVELOPMENT METHODOLOGIES: Agile, Scrum (Certified ScrumMaster), Kanban, XP, Code Review Best Practices, Pair Programming, Mob Programming
-          | SECURITY EXPERTISE: OWASP Top 10, Application Security, Secure Coding Practices, Authentication Systems (OAuth 2.0, JWT, SAML), Authorization & Access Control, Security Audits, Penetration Testing Coordination, GDPR Compliance
-          | MONITORING & OBSERVABILITY: New Relic (APM), Sentry (Error Tracking), ELK Stack (Elasticsearch, Logstash, Kibana), Prometheus, Grafana, CloudWatch, Application Performance Monitoring
-          | MESSAGE QUEUES & ASYNC: RabbitMQ, Redis Pub/Sub, AWS SQS, Event Sourcing, Background Job Processing
-          | WEB SERVERS: Nginx (Configuration & Optimization), Apache, Load Balancing, Reverse Proxy Setup
-          | OPERATING SYSTEMS: Linux (Ubuntu, CentOS, Debian), macOS, Unix-based systems
-          | API TECHNOLOGIES: REST API Design & Implementation, GraphQL (Schema Design), API Documentation (OpenAPI/Swagger), API Versioning, Rate Limiting, API Security
-          | ADDITIONAL SKILLS: Performance Profiling, Database Query Optimization, Caching Strategies (Redis, Memcached, CDN), Technical Documentation, Technical Writing, System Architecture Documentation
-        </dd>
-
-        <dt>Notable Career Achievements:</dt>
-        <dd>Led development of safety-critical lone worker monitoring systems serving thousands of users | Architected and implemented scalable microservices platforms handling high-volume traffic | Successfully managed and mentored remote development teams across multiple time zones | Improved system performance and reliability through optimization and monitoring | Implemented comprehensive CI/CD pipelines reducing deployment time significantly | Designed and built secure authentication and authorization systems | Modernized legacy applications with current best practices | Introduced Test-Driven Development and quality assurance processes | Conducted technical interviews and built high-performing engineering teams | Delivered complex projects on time and within budget</dd>
-
-        <dt>Community Involvement:</dt>
-        <dd>Chair of Leicester Greek School Parents Association (Sep 2024 - Present), Chief Instructor at Leicester Aikikai martial arts school (2009 - Present), Fourth degree black belt instructor, Part-time Lecturer and Supervisor at De Montfort University (2014-2016)</dd>
-
-        <dt>Languages Spoken:</dt>
-        <dd>English (Native/Fluent), Greek (Native/Fluent)</dd>
-
-        <dt>Preferred Work Style:</dt>
-        <dd>Remote-first, Asynchronous communication, Documentation-driven, Test-driven development, Code review culture, Continuous learning, Collaborative problem-solving</dd>
-
-        <dt>Open to Opportunities:</dt>
-        <dd>Lead Developer roles, Principal Engineer positions, Software Architect roles, Technical Leadership positions, Backend Engineering roles, Full-stack Development opportunities, Contract/Consulting engagements, Technical Advisory positions, Remote-first companies</dd>
+        <template v-for="entry in profileSummary" :key="entry.label">
+          <dt>{{ entry.label }}</dt>
+          <dd>{{ entry.text }}</dd>
+        </template>
       </dl>
     </div>
 
@@ -112,19 +44,19 @@
           <article class="experience-card current-role" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
             <div class="card-header-custom">
               <div class="title-badges">
-                <h3 class="position-title" itemprop="jobTitle">Development Manager</h3>
+                <h3 class="position-title" itemprop="jobTitle">{{ currentRole.title }}</h3>
                 <span class="remote-badge" aria-label="Remote Position">🏠 Remote</span>
               </div>
-              <time class="date-badge current" datetime="2026-04">Apr 2026 - Present</time>
+              <time class="date-badge current" :datetime="currentRole.startDate">{{ currentRole.period }}</time>
             </div>
             <p class="company-location">
-              <span class="company-name" itemprop="name">EcoOnline Global</span>
+              <span class="company-name" itemprop="name">{{ currentRole.company }}</span>
               <span class="location" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                <span itemprop="addressLocality">London</span>, <span itemprop="addressCountry">United Kingdom</span>
+                <span itemprop="addressLocality">{{ currentRole.locality }}</span>, <span itemprop="addressCountry">{{ currentRole.country }}</span>
               </span>
             </p>
             <div class="description">
-              <p>Helping to keep people safe with StaySafe Lone Worker, since December 2017</p>
+              <p>{{ currentRole.description }}</p>
             </div>
           </article>
 
@@ -136,32 +68,21 @@
               </div>
             </div>
             <p class="company-location">
-              <span class="company-name">EcoOnline Global</span>
-              <span class="location">London, United Kingdom</span>
+              <span class="company-name">{{ currentRole.company }}</span>
+              <span class="location">{{ currentRole.locality }}, {{ currentRole.country }}</span>
             </p>
             <div class="progression-timeline">
-              <div class="timeline-entry">
-                <div class="timeline-dot"></div>
+              <div v-for="role in careerProgression" :key="role.startDate" class="timeline-entry">
+                <div class="timeline-dot" aria-hidden="true"></div>
                 <div class="timeline-content">
-                  <span class="timeline-title">Lead Developer</span>
-                  <span class="timeline-company">EcoOnline Global</span>
-                  <time class="timeline-date" datetime="2023-11/2026-04">Nov 2023 – Apr 2026</time>
-                </div>
-              </div>
-              <div class="timeline-entry">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-title">Lead Developer</span>
-                  <span class="timeline-company">StaySafe <span class="timeline-note">(acquired by EcoOnline Global)</span></span>
-                  <time class="timeline-date" datetime="2020-10/2023-11">Oct 2020 – Nov 2023</time>
-                </div>
-              </div>
-              <div class="timeline-entry">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <span class="timeline-title">Senior Developer</span>
-                  <span class="timeline-company">StaySafe</span>
-                  <time class="timeline-date" datetime="2017-12/2020-10">Dec 2017 – Oct 2020</time>
+                  <span class="timeline-title">{{ role.title }}</span>
+                  <span class="timeline-company">
+                    {{ role.company }} <span v-if="role.note" class="timeline-note">{{ role.note }}</span>
+                  </span>
+                  <span class="timeline-date">
+                    <time :datetime="role.startDate">{{ role.period.split(' – ')[0] }}</time> –
+                    <time :datetime="role.endDate">{{ role.period.split(' – ')[1] }}</time>
+                  </span>
                 </div>
               </div>
             </div>
@@ -177,9 +98,9 @@
             :aria-expanded="showPastPositions"
             aria-controls="past-positions-table"
           >
-            <i :class="showPastPositions ? 'bi bi-chevron-up' : 'bi bi-chevron-down'" aria-hidden="true"></i>
+            <span class="toggle-chevron" aria-hidden="true">{{ showPastPositions ? '▴' : '▾' }}</span>
             Past Positions
-            <span class="position-count">(13 positions)</span>
+            <span class="position-count">({{ pastPositions.length }} positions)</span>
           </button>
 
           <transition name="slide-fade">
@@ -195,83 +116,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td><strong>Senior Software Engineer</strong></td>
-                      <td>Holmes Media (UK) Ltd</td>
-                      <td>Market Harborough, UK</td>
-                      <td>Mar 2017 - Dec 2017</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Senior PHP Developer</strong></td>
-                      <td>All Answers Ltd</td>
-                      <td>Nottingham, UK</td>
-                      <td>Apr 2016 - Mar 2017</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Part-time Lecturer / Supervisor</strong></td>
-                      <td>De Montfort University (DMU)</td>
-                      <td>Leicester, UK</td>
-                      <td>Oct 2014 - Aug 2016</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Senior Developer</strong></td>
-                      <td>DVO Media Ltd</td>
-                      <td>Nottingham, UK</td>
-                      <td>Feb 2015 - Apr 2016</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Senior Developer</strong></td>
-                      <td>Twist Digital LLP</td>
-                      <td>Nottingham, UK</td>
-                      <td>Feb 2015 - May 2015</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Software Engineer</strong></td>
-                      <td>Jadu</td>
-                      <td>Leicester, UK</td>
-                      <td>Feb 2013 - Jan 2015</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Head of Development</strong></td>
-                      <td>Go MAD Technology Ltd</td>
-                      <td>Leicester, UK</td>
-                      <td>Nov 2011 - Feb 2013</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Lead Developer</strong></td>
-                      <td>Go MAD Technology Ltd</td>
-                      <td>Leicester, UK</td>
-                      <td>Jul 2010 - Dec 2011</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Web Applications Developer</strong></td>
-                      <td>Go MAD Technology Ltd</td>
-                      <td>Leicester, UK</td>
-                      <td>Jun 2008 - Jul 2010</td>
-                    </tr>
-                    <tr>
-                      <td><strong>KTP Associate</strong></td>
-                      <td>De Montfort University</td>
-                      <td>Leicester, UK</td>
-                      <td>Jun 2008 - Jul 2010</td>
-                    </tr>
-                    <tr>
-                      <td><strong>IT & Development Manager</strong></td>
-                      <td>deSciner Business Network Ltd</td>
-                      <td>Leicester, UK</td>
-                      <td>2007 - 2008</td>
-                    </tr>
-                    <tr>
-                      <td><strong>Web Developer</strong></td>
-                      <td>OBBeC Media Publications Ltd</td>
-                      <td>Leicester, UK</td>
-                      <td>2005 - 2007</td>
-                    </tr>
-                    <tr>
-                      <td><strong>IT Support</strong></td>
-                      <td>Novartis</td>
-                      <td>Basel, Switzerland</td>
-                      <td>2000 - 2001</td>
+                    <tr v-for="position in pastPositions" :key="`${position.company}-${position.period}`">
+                      <td><strong>{{ position.title }}</strong></td>
+                      <td>{{ position.company }}</td>
+                      <td>{{ position.location }}</td>
+                      <td>{{ position.period }}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -290,71 +139,53 @@
         </h2>
 
         <div class="experience-grid">
-          <!-- Leicester Greek School Parents Association -->
-          <article class="experience-card community-card">
+          <article v-for="role in communityRoles" :key="role.company" class="experience-card community-card">
             <div class="card-header-custom">
-              <h3 class="position-title">Chair</h3>
-              <time class="date-badge current" datetime="2024-09">Sep 2024 - Present</time>
-            </div>
-            <p class="company-location">
-              <span class="company-name">Leicester Greek School Parents Association</span>
-            </p>
-          </article>
-
-          <!-- Martial Arts Instructor -->
-          <article class="experience-card community-card">
-            <div class="card-header-custom">
-              <h3 class="position-title">Chief Instructor & Martial Arts Instructor</h3>
-              <time class="date-badge current" datetime="2009">2009 - Present</time>
+              <h3 class="position-title">{{ role.title }}</h3>
+              <time class="date-badge current" :datetime="role.startDate">{{ role.period }}</time>
             </div>
             <p class="company-location">
               <span class="company-name">
-                <a href="https://leicesteraikikai.com" target="_blank" rel="noopener noreferrer" class="company-link">
-                  Leicester Aikikai
+                <a v-if="role.url" :href="role.url" target="_blank" rel="noopener noreferrer" class="company-link">
+                  {{ role.company }}
                 </a>
+                <template v-else>{{ role.company }}</template>
               </span>
             </p>
-            <div class="description">
-              <p>Fourth degree black belt, fully qualified instructor teaching since 2009.</p>
+            <div v-if="role.description" class="description">
+              <p>{{ role.description }}</p>
             </div>
           </article>
         </div>
       </section>
 
       <!-- Education -->
-      <section class="cv-section mb-5" aria-labelledby="education-heading" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+      <section class="cv-section mb-5" aria-labelledby="education-heading">
         <h2 class="section-title" id="education-heading">
           <i class="bi bi-mortarboard-fill me-2" aria-hidden="true"></i>
           Education
         </h2>
 
         <div class="education-grid">
-          <article class="education-card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+          <article v-for="degree in education" :key="degree.title" class="education-card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
             <div class="education-header">
               <h3 class="degree-title" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <span itemprop="name">MSc, Computational Intelligence and Robotics</span>
+                <span itemprop="name">{{ degree.title }}</span>
               </h3>
-              <time class="education-date" datetime="2004/2005">2004 - 2005</time>
+              <span class="education-date">
+                <time :datetime="degree.startDate">{{ degree.startDate }}</time> -
+                <time :datetime="degree.endDate">{{ degree.endDate }}</time>
+              </span>
             </div>
-            <p class="institution" itemprop="name">De Montfort University</p>
-          </article>
-
-          <article class="education-card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <div class="education-header">
-              <h3 class="degree-title" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <span itemprop="name">BSc (Hons), Computer Science</span>
-              </h3>
-              <time class="education-date" datetime="1999/2004">1999 - 2004</time>
-            </div>
-            <p class="institution" itemprop="name">De Montfort University</p>
+            <p class="institution" itemprop="name">{{ degree.institution }}</p>
           </article>
         </div>
       </section>
     </div>
 
     <div class="mt-5 text-center no-print">
-      <RouterLink to="/" class="btn btn-outline-primary">
-        <i class="bi bi-arrow-left"></i> Back to Home
+      <RouterLink to="/blog" class="btn btn-outline-primary">
+        <i class="bi bi-journal-text"></i> Read the Blog
       </RouterLink>
       <button class="btn btn-primary ms-2" @click="printCV">
         <i class="bi bi-printer-fill"></i> Print CV
@@ -363,290 +194,31 @@
   </article>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useSEO } from '@/composables/useSEO'
-import { onMounted } from 'vue'
+import { useStructuredData } from '@/composables/useStructuredData'
+import {
+  currentRole,
+  careerProgression,
+  pastPositions,
+  communityRoles,
+  education,
+  profileSummary,
+  cvMeta,
+  cvStructuredData
+} from '@/data/cv'
 
-export default {
-  name: 'Cv',
-  components: {
-    RouterLink
-  },
-  setup() {
-    // SEO Meta Tags with AI/LLM Optimization
-    useSEO({
-      title: 'Antonios Pavlakis MSc MBCS - Development Manager CV | PHP Backend & Security Specialist',
-      description: 'Development Manager & Lead Developer specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years experience in software engineering, team leadership, and full-stack development. Expert in PHP, Symfony, Laravel, MySQL, Redis, Docker, AWS. Remote work specialist with proven track record in SaaS platforms and safety-critical systems.',
-      keywords: 'Antonios Pavlakis, Development Manager, Lead Developer, Senior PHP Developer, Backend Developer, Software Engineer, EcoOnline Global, StaySafe, PHP Expert, Symfony, Laravel, MySQL, PostgreSQL, Redis, Docker, Kubernetes, AWS, Microservices, API Development, REST, GraphQL, Security Specialist, Team Lead, Engineering Manager, Scalable Architecture, EHS Systems, Lone Worker Safety, SaaS, Remote Developer, Agile, Scrum, TDD, CI/CD, Git, DevOps, Software Architecture, Database Design, Performance Optimization, Code Review, Mentoring, Leicester UK, London UK, Available for Hire, Contract Developer, Permanent Roles, TypeScript, JavaScript, Vue.js, React, Event-Driven Architecture, Domain-Driven Design, CQRS, PHPUnit, Behat, Jenkins, GitHub Actions, OWASP, OAuth, JWT, Authentication, Authorization, New Relic, Sentry, ELK Stack, RabbitMQ, Nginx, Apache, Linux, High Availability, Load Balancing, Message Queues, API Design, OpenAPI, Swagger, GDPR, Security Audits, Technical Leadership, Engineering Management',
-      author: 'Antonios Pavlakis',
-      ogType: 'profile',
-      url: 'https://pavlakis.dev/antonios-pavlakis-cv',
-      canonical: 'https://pavlakis.dev/antonios-pavlakis-cv'
-    })
+const showPastPositions = ref(false)
+const printCV = () => window.print()
 
-    // Add JSON-LD Structured Data - Enhanced for AI/LLM
-    onMounted(() => {
-      const structuredData = {
-        '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: 'Antonios Pavlakis',
-        givenName: 'Antonios',
-        familyName: 'Pavlakis',
-        honorificSuffix: 'MSc MBCS',
-        jobTitle: 'Development Manager',
-        description: 'Development Manager specializing in Critical EHS & Lone Worker Systems, PHP Backend Development, Security, and Scalable Architecture. 20+ years professional software engineering experience with expertise in building high-availability SaaS platforms, team leadership, and safety-critical systems.',
-        url: 'https://pavlakis.dev',
-        email: 'mailto:contact@pavlakis.dev',
-        sameAs: [
-          'https://www.linkedin.com/in/pavlakis',
-          'https://pavlakis.dev',
-          'https://github.com/pavlakis'
-        ],
-        alumniOf: [
-          {
-            '@type': 'EducationalOrganization',
-            name: 'De Montfort University',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Leicester',
-              addressCountry: 'United Kingdom'
-            }
-          }
-        ],
-        hasCredential: [
-          {
-            '@type': 'EducationalOccupationalCredential',
-            credentialCategory: 'degree',
-            name: 'Master of Science in Computational Intelligence and Robotics',
-            educationalLevel: 'Masters',
-            recognizedBy: {
-              '@type': 'EducationalOrganization',
-              name: 'De Montfort University'
-            }
-          },
-          {
-            '@type': 'EducationalOccupationalCredential',
-            credentialCategory: 'degree',
-            name: 'Bachelor of Science (Honours) in Computer Science',
-            educationalLevel: 'Bachelors',
-            recognizedBy: {
-              '@type': 'EducationalOrganization',
-              name: 'De Montfort University'
-            }
-          },
-          {
-            '@type': 'EducationalOccupationalCredential',
-            credentialCategory: 'professional',
-            name: 'MBCS - Member of British Computer Society',
-            recognizedBy: {
-              '@type': 'Organization',
-              name: 'British Computer Society'
-            }
-          }
-        ],
-        knowsAbout: [
-          'PHP',
-          'PHP 8',
-          'Symfony',
-          'Laravel',
-          'Backend Development',
-          'Software Architecture',
-          'Microservices',
-          'RESTful API',
-          'GraphQL',
-          'MySQL',
-          'PostgreSQL',
-          'Redis',
-          'Elasticsearch',
-          'Docker',
-          'Kubernetes',
-          'AWS',
-          'Azure',
-          'CI/CD',
-          'Jenkins',
-          'GitHub Actions',
-          'GitLab CI',
-          'Security',
-          'Application Security',
-          'OWASP',
-          'Authentication',
-          'Authorization',
-          'OAuth',
-          'JWT',
-          'Team Leadership',
-          'Agile',
-          'Scrum',
-          'Kanban',
-          'Code Review',
-          'Mentoring',
-          'Technical Architecture',
-          'System Design',
-          'Database Design',
-          'Performance Optimization',
-          'Scalability',
-          'High Availability',
-          'Load Balancing',
-          'Caching Strategies',
-          'Message Queues',
-          'RabbitMQ',
-          'Event-Driven Architecture',
-          'Domain-Driven Design',
-          'Test-Driven Development',
-          'PHPUnit',
-          'Behat',
-          'Git',
-          'Linux',
-          'Nginx',
-          'Apache',
-          'DevOps',
-          'SaaS',
-          'EHS Software',
-          'Lone Worker Safety Systems',
-          'Full Stack Development',
-          'JavaScript',
-          'Vue.js',
-          'React',
-          'API Integration',
-          'Third-party APIs',
-          'Payment Gateways',
-          'Monitoring',
-          'Logging',
-          'New Relic',
-          'Sentry',
-          'Remote Team Management',
-          'Remote Work',
-          'TypeScript',
-          'MariaDB',
-          'MongoDB',
-          'Event Sourcing',
-          'CQRS',
-          'Hexagonal Architecture',
-          'API Design',
-          'API Documentation',
-          'OpenAPI',
-          'Swagger',
-          'GDPR Compliance',
-          'Security Audits',
-          'Penetration Testing',
-          'CloudWatch',
-          'ELK Stack',
-          'Prometheus',
-          'Grafana'
-        ],
-        knowsLanguage: [
-          {
-            '@type': 'Language',
-            name: 'English',
-            alternateName: 'en'
-          },
-          {
-            '@type': 'Language',
-            name: 'Greek',
-            alternateName: 'el'
-          }
-        ],
-        workLocation: {
-          '@type': 'Place',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'London',
-            addressCountry: 'United Kingdom'
-          }
-        },
-        worksFor: {
-          '@type': 'Organization',
-          name: 'EcoOnline Global',
-          sameAs: 'https://ecoonline.com',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'London',
-            addressCountry: 'United Kingdom'
-          }
-        },
-        workHistory: [
-          {
-            '@type': 'OrganizationRole',
-            roleName: 'Development Manager',
-            startDate: '2026-04',
-            worksFor: {
-              '@type': 'Organization',
-              name: 'EcoOnline Global'
-            }
-          },
-          {
-            '@type': 'OrganizationRole',
-            roleName: 'Lead Developer',
-            startDate: '2023-11',
-            endDate: '2026-04',
-            worksFor: {
-              '@type': 'Organization',
-              name: 'EcoOnline Global'
-            }
-          },
-          {
-            '@type': 'OrganizationRole',
-            roleName: 'Lead Developer',
-            startDate: '2020-10',
-            endDate: '2023-11',
-            worksFor: {
-              '@type': 'Organization',
-              name: 'StaySafe'
-            }
-          },
-          {
-            '@type': 'OrganizationRole',
-            roleName: 'Senior Developer',
-            startDate: '2017-12',
-            endDate: '2020-10',
-            worksFor: {
-              '@type': 'Organization',
-              name: 'StaySafe'
-            }
-          }
-        ],
-        seekingEmployment: false,
-        availableForWork: true,
-        workRemote: true,
-        interactionStatistic: {
-          '@type': 'InteractionCounter',
-          interactionType: 'https://schema.org/WriteAction',
-          userInteractionCount: '20+ years professional experience'
-        }
-      }
-
-      // Remove existing structured data if present
-      const existingScript = document.querySelector('script[type="application/ld+json"]')
-      if (existingScript) {
-        existingScript.remove()
-      }
-
-      // Add new structured data
-      const script = document.createElement('script')
-      script.type = 'application/ld+json'
-      script.text = JSON.stringify(structuredData)
-      document.head.appendChild(script)
-    })
-
-    return {
-      showPastPositions: false
-    }
-  },
-  data() {
-    return {
-      showPastPositions: false
-    }
-  },
-  methods: {
-    printCV() {
-      window.print()
-    }
-  }
-}
+useSEO(cvMeta)
+useStructuredData(cvStructuredData)
 </script>
 
 <style scoped>
-/* AI/LLM Optimization: Screen reader only content visible to crawlers */
+/* Extended profile for assistive technology */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -867,7 +439,7 @@ export default {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.toggle-button i {
+.toggle-chevron {
   font-size: 1.25rem;
   color: #0d6efd;
   transition: transform 0.3s ease;
@@ -1137,8 +709,7 @@ export default {
   font-size: 0.875rem;
   color: #6c757d;
   font-style: italic;
-  display: flex;
-  align-items: center;
+  display: block;
 }
 
 .location::before {
@@ -1157,7 +728,7 @@ export default {
 /* Education Grid */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
   gap: 1.5rem;
 }
 
@@ -1271,6 +842,15 @@ export default {
 
   .experience-table tbody tr {
     page-break-inside: avoid;
+  }
+
+  .table-responsive {
+    overflow: visible;
+  }
+
+  .experience-table tbody td:nth-child(n) {
+    min-width: 0;
+    white-space: normal;
   }
 
   .education-card {
